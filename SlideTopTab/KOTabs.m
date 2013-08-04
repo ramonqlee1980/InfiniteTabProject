@@ -344,7 +344,10 @@
 	[self setActiveBarIndex:newActiveBarIndex];
 	
 	if (delegate && [delegate respondsToSelector:@selector(tabs:didSwitchItem:)])
-		[delegate tabs:self didSwitchItem:nil];
+    {
+        KOTabView* view = [self.tabViews objectAtIndex:self.activeViewIndex];
+		[delegate tabs:self didSwitchItem:view.name];
+    }
 }
 
 - (void)selectButtonAtIndex:(id)sender {
@@ -353,8 +356,11 @@
 		[self setActiveViewIndex:[(KOTabButton *)sender index]];
 	}
 	
-	if (delegate && [delegate respondsToSelector:@selector(tabbedView:didSwitchFile:)])
-		[delegate tabs:self didSwitchItem:nil];
+	if (delegate && [delegate respondsToSelector:@selector(tabs:didSwitchItem:)])
+    {
+        KOTabView* view = [self.tabViews objectAtIndex:self.activeViewIndex];
+		[delegate tabs:self didSwitchItem:view.name];
+    }
 }
 
 - (KOTabView *)activeTabView {
