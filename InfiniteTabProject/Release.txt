@@ -1,0 +1,20 @@
+/* 
+  Release.strings
+  InfiniteTabProject
+
+  Created by Ramonqlee on 8/4/13.
+  Copyright (c) 2013 iDreems. All rights reserved.
+*/
+1.	重构APP框架
+a)	重构App框架
+2.	底部tab可滑动
+3.	顶部tab可滑动
+4.
+i.	支持频道概念；滑动界面
+ii.	支持分享，DB收藏功能：模块化（会员收藏无限制）
+iii.	穿越模式：（会员功能）
+iv.	支持云同步功能：模块化（会员功能）
+v.	去除广告：（会员功能）
+vi.	支持广告插件；done
+vii.	支持应用内支付；done
+b)	更新美容，场面话，中医小窍门等应用

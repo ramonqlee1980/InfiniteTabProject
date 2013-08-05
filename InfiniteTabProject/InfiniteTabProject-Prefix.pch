@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the 'InfiniteTabProject' target in the 'InfiniteTabProject' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#define kTabHeight 49.0f
+#define kTopTabHeight 33.0f
+#define kDeviceWidth  [[UIScreen mainScreen]applicationFrame].size.width
+#define kDeviceHeight [[UIScreen mainScreen]applicationFrame].size.height
+#define kNavigationBarHeight 44.0f
